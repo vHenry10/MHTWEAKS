@@ -743,7 +743,7 @@ def on_mouse_click(x, y, button, pressed):
 # GUI — Enhanced with animations and color themes
 # ══════════════════════════════════════════════════════════════════════════════
 root = tk.Tk()
-root.title("RTweaks")
+root.title("MHTWEAKS")
 # Set initial size based on menu_size (default is small 800x600)
 if menu_size == "small":
     root.geometry("800x450")
@@ -823,13 +823,13 @@ logo_y_off = (titlebar_height - logo_size) // 2
 logo_frame = tk.Frame(title_bar, bg=COLORS["ACCENT"], width=logo_size, height=logo_size)
 logo_frame.place(x=14, y=logo_y_off)
 logo_font_size = 10 if menu_size == "small" else 13
-tk.Label(logo_frame, text="R", bg=COLORS["ACCENT"], fg=COLORS["WHITE"],
+tk.Label(logo_frame, text="M", bg=COLORS["ACCENT"], fg=COLORS["WHITE"],
          font=tkfont.Font(family="Segoe UI", size=logo_font_size, weight="bold")
          ).place(relx=0.5, rely=0.5, anchor="center")
 
 # App name next to logo
 title_font_size = 11 if menu_size == "small" else 15
-title_label = tk.Label(title_bar, text="RTweaks", bg=COLORS["BG_PANEL"], fg=COLORS["TEXT"],
+title_label = tk.Label(title_bar, text="MHTWEAKS", bg=COLORS["BG_PANEL"], fg=COLORS["TEXT"],
          font=tkfont.Font(family="Segoe UI", size=title_font_size, weight="bold"))
 title_label.place(x=logo_size + 22, y=(titlebar_height - title_font_size - 4) // 2)
 
@@ -1020,11 +1020,11 @@ hero_left = tk.Frame(hero_inner, bg=COLORS["BG_PANEL"])
 hero_left.pack(side="left", fill="y")
 title_size = 26 if menu_size == "small" else 34
 sub_size   = 9  if menu_size == "small" else 12
-tk.Label(hero_left, text="RTweaks", bg=COLORS["BG_PANEL"], fg=COLORS["TEXT"], font=tkfont.Font(family="Segoe UI", size=title_size, weight="bold")).pack(anchor="w")
+tk.Label(hero_left, text="MHTWEAKS", bg=COLORS["BG_PANEL"], fg=COLORS["TEXT"], font=tkfont.Font(family="Segoe UI", size=title_size, weight="bold")).pack(anchor="w")
 hero_sub_row = tk.Frame(hero_left, bg=COLORS["BG_PANEL"])
 hero_sub_row.pack(anchor="w", pady=(2, 0))
 tk.Label(hero_sub_row, text="by ", bg=COLORS["BG_PANEL"], fg=COLORS["TEXT_DIM"], font=tkfont.Font(family="Segoe UI", size=sub_size)).pack(side="left")
-tk.Label(hero_sub_row, text="RedBubbleFN", bg=COLORS["BG_PANEL"], fg=COLORS["ACCENT"], font=tkfont.Font(family="Segoe UI", size=sub_size, weight="bold")).pack(side="left")
+tk.Label(hero_sub_row, text="vHenry10", bg=COLORS["BG_PANEL"], fg=COLORS["ACCENT"], font=tkfont.Font(family="Segoe UI", size=sub_size, weight="bold")).pack(side="left")
 tk.Frame(hero, bg=COLORS["BORDER"], height=1).pack(fill="x")
 
 # --- Timeline of Features ---
@@ -1068,7 +1068,7 @@ tk.Label(quick, text=qs_text, bg=COLORS["BG_PANEL"], fg=COLORS["TEXT"], font=tkf
 # --- Discord Invite ---
 discord_invite = tk.Frame(intro_content, bg=COLORS["BG_MAIN"])
 discord_invite.pack(fill="x", padx=0, pady=(18, 0))
-tk.Label(discord_invite, text="Join the RTweaks Discord for updates & support!", bg=COLORS["BG_MAIN"], fg="#5865F2", font=tkfont.Font(family="Segoe UI", size=11 if menu_size=="small" else 15, weight="bold")).pack(anchor="center")
+tk.Label(discord_invite, text="Join the MHTWEAKS Discord for updates & support!", bg=COLORS["BG_MAIN"], fg="#5865F2", font=tkfont.Font(family="Segoe UI", size=11 if menu_size=="small" else 15, weight="bold")).pack(anchor="center")
 
 # Local copy_discord_link for intro tab
 def copy_discord_link():
@@ -2043,7 +2043,7 @@ kb_section_label("Hotkeys")
 hotkey_bind_rows = [
     ("hotkey_hide_show",   "Hide / Show",       "Toggle menu visibility"),
     ("hotkey_disable_all", "Toggle All Macros", "Turn all macros on/off"),
-    ("hotkey_panic",       "Panic Close",       "Instantly close RTweaks"),
+    ("hotkey_panic",       "Panic Close",       "Instantly close MHTWEAKS"),
 ]
 hotkey_vals = {
     "hotkey_hide_show":   hotkey_hide_show,
@@ -2283,7 +2283,7 @@ disc_top_row.pack(anchor="w")
 
 tk.Label(disc_top_row, text="💬", bg="#5865F2", fg="#ffffff",
          font=tkfont.Font(family="Segoe UI", size=disc_title_size)).pack(side="left", padx=(0,8))
-tk.Label(disc_top_row, text="RTweaks Community", bg="#5865F2", fg="#ffffff",
+tk.Label(disc_top_row, text="MHTWEAKS Community", bg="#5865F2", fg="#ffffff",
          font=tkfont.Font(family="Segoe UI", size=disc_title_size, weight="bold")).pack(side="left")
 
 tk.Label(disc_banner_inner, text="Join the official server for updates, support, and community",
@@ -2363,7 +2363,7 @@ tk.Label(disc_channels_frame, text="WHAT'S INSIDE", bg=COLORS["BG_MAIN"], fg=COL
          font=tkfont.Font(family="Segoe UI", size=7, weight="bold")).pack(anchor="w", pady=(0,6))
 
 channels_info = [
-    ("#announcements", "New RTweaks releases & changelogs"),
+    ("#announcements", "New MHTWEAKS releases & changelogs"),
     ("#support",       "Help with setup, binds & bugs"),
     ("#general",       "Chat with other players"),
     ("#vouches",       "See what other players are saying"),

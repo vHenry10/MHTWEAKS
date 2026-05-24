@@ -1,4 +1,4 @@
-# MHTWEAKS (RTweaks)
+# MHTWEAKS
 
 A Fortnite macro tool with a modern dark-themed UI built in Python/Tkinter.
 
@@ -47,7 +47,7 @@ All hotkeys are rebindable in the Keybinds tab.
 
 ```bash
 pip install -r requirements.txt
-python rtweaks.py
+python mhtweaks.py
 ```
 
 ## Configuration
@@ -56,4 +56,4 @@ Settings are auto-saved to `macro_config.json` in the working directory. This in
 
 ## Discord
 
-Join the RTweaks community: [discord.gg/6BhX8TZsvg](https://discord.gg/6BhX8TZsvg)
+Join the MHTWEAKS community: [discord.gg/6BhX8TZsvg](https://discord.gg/6BhX8TZsvg)
